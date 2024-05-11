@@ -1,0 +1,20 @@
+*node_modules
+
+# Logs
+logs
+*.log
+
+# OS
+.DS_Store
+
+# Tests
+*coverage
+
+# IDEs and editors
+*.idea
+
+# Build files
+*package-lock.json
+
+# Environment
+*.env
