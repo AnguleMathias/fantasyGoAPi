@@ -2,10 +2,11 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "type": "module",
+  "main": "src/index.ts",
   "scripts": {
-    "start": "tsc && node dist/index.js",
-    "dev": "tsc-watch --onSuccess \"node dist/index.js\"",
+    "start": "tsc && nodemon dist/src/index.js",
+    "dev": "tsc-watch --onSuccess \"nodemon dist/src/index.js\"",
     "build": "tsc",
     "test": "jest"
   },

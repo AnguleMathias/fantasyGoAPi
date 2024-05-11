@@ -4,11 +4,21 @@ export interface Player {
   displayName: string;
   totalPoints: number;
   team: string;
-  statistic1: any;
-  statistic2: any;
+  cost: number;
+  selectedPercent: string;
+}
+
+export interface PlayerResponse {
+  first_name: string;
+  second_name: string;
+  web_name: string;
+  total_points: number;
+  team_name: string;
+  now_cost: number;
+  selected_by_percent: string;
 }
 
 export enum League {
   EPL = "EPL",
-  ChampionsLeague = "Champions League",
+  ChampionsLeague = "UEFA",
 }

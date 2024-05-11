@@ -1,8 +1,8 @@
 import { AuthenticationError } from "apollo-server";
 
-import { fetchPlayers } from "../services/playerService";
-import { generateToken, verifyToken } from "../services/authService";
-import { validateMobileNumber, validatePassword } from "../utils/validators";
+import { fetchPlayers } from "../services/playerService.js";
+import { generateToken, verifyToken } from "../services/authService.js";
+import { validateMobileNumber, validatePassword } from "../utils/validators.js";
 
 const resolvers = {
   Query: {
