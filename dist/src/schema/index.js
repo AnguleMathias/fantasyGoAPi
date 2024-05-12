@@ -1,6 +1,5 @@
 import { gql } from "apollo-server";
-
-export const typeDefs = gql`
+export const typeDefs = gql `
   type Query {
     """
     Generates a JWT token for the given mobile number and password.
@@ -11,6 +10,9 @@ export const typeDefs = gql`
 
     """
     Returns a list of football players for a specified league. Requires JWT authentication.
+    Supported leagues are the English Premier League (EPL) and the Champions League.
+    The response includes players' first and second names, display name, total points, team,
+    and two additional statistics of choice.
     """
     getPlayers(league: String!): [Player]
   }
